@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rotate the video to mirror the webcam */
+video {
+  transform: rotateY(180deg);
+}
+
+/* Own message styling */
+.ownMessage {
+  @apply w-max max-w-80 self-end rounded-xl rounded-ee-none bg-gradient-to-tr from-indigo-200 to-blue-100 p-1 px-3 text-gray-700;
+}
+
+/* Others' message styling */
+.othersMessage {
+  @apply w-max max-w-80 rounded-xl rounded-es-none bg-gray-200 p-1 px-3 text-gray-700;
+}
+
+/* Blue gradient button */
+.btn-blue-grad {
+  @apply px-4 py-2 bg-gradient-to-tr text-white rounded-md font-semibold text-sm shadow-lg shadow-indigo-300 from-indigo-600 to-blue-500 active:from-indigo-700 active:to-blue-600;
+}
+
+/* Red gradient button */
+.btn-red-grad {
+  @apply rounded-md bg-gradient-to-tr from-red-600 to-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-red-300 active:from-red-700 active:to-orange-600;
+}
